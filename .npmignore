@@ -2,5 +2,6 @@ node_modules
 *.log
 coverage
 test
+src
 example
 karma.conf.js
