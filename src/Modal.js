@@ -1,17 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import focusScope from 'a11y-focus-scope';
 import focusStore from 'a11y-focus-store';
 import ExecutionEnvironment from 'exenv';
 
 function setFocusOn(applicationElement, element) {
   focusStore.storeFocus();
   if (applicationElement) applicationElement.setAttribute('aria-hidden', 'true');
-  focusScope.scopeFocus(element);
 }
 
 function resetFocus(applicationElement) {
-  focusScope.unscopeFocus();
   if (applicationElement) applicationElement.removeAttribute('aria-hidden');
   focusStore.restoreFocus();
 }
