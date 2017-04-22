@@ -8,6 +8,9 @@
 - Universal/Isomorphic
 - Built via [reusable](https://github.com/cloudflare/react-gateway) [collection](https://github.com/cloudflare/a11y-focus-scope) of [modules](https://github.com/cloudflare/a11y-focus-store)
 
+## Note
+This fork includes a workaround for [#22](https://github.com/cloudflare/react-modal2/issues/22).
+
 ## Installation
 
 ```js
